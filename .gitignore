@@ -1,0 +1,19 @@
+# 工具產生的雜訊
+*.log
+*.key
+*.history
+*.fsdb
+*.vcd
+*.shm/
+*.sdf
+*.fsdb
+*.vcd
+INCA_libs/
+work/
+spyglass-*/
+Novas/
+
+# APR 與 SYN 的暫存
+CCR/
+fv/
+scripts/.temp

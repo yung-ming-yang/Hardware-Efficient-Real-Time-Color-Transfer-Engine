@@ -1,0 +1,3 @@
+分為pre_layout以及post_layout，在裡面皆可用run_lec.sh或是run_lec_hier.sh來跑lec
+
+pre_layout與post_layout的 LEC 結果皆為 PASS

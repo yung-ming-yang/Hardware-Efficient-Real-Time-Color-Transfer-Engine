@@ -1,0 +1,1 @@
+我們將 timing constraint 設定為 6.5 ns，此設定在確保系統具備較高運作速度的同時，亦能避免 timing violation 以及後續 gate-level simulation 以及 post-layout simulation，並在效能與時序收斂之間取得平衡。

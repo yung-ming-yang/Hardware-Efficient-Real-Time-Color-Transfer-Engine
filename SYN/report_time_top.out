@@ -1,0 +1,111 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : top
+Version: R-2020.09-SP5
+Date   : Thu Dec 25 21:37:47 2025
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: PVT_1P08V_125C   Library: slow_vdd1v2
+Wire Load Model Mode: enclosed
+
+  Startpoint: chroma_stats/cnt131071_reg_4_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: chroma_stats/sum3rd_sqr_Cb_reg_52_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                Large                 slow_vdd1v2
+  chroma_stats_CH_NUM4_LINEAR_BW16
+                     Small                 slow_vdd1v2
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                 0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  chroma_stats/cnt131071_reg_4_/CK (DFFQXL)             0.0000 #   0.0000 r
+  chroma_stats/cnt131071_reg_4_/Q (DFFQXL)              0.0952     0.0952 r
+  chroma_stats/U308/Y (NOR4XL)                          0.0452     0.1404 f
+  chroma_stats/U954/Y (NAND3BXL)                        0.0435     0.1839 r
+  chroma_stats/U351/Y (NOR4XL)                          0.0372     0.2212 f
+  chroma_stats/U311/Y (NAND4XL)                         0.0476     0.2687 r
+  chroma_stats/U244/Y (NOR2BXL)                         0.0534     0.3221 f
+  chroma_stats/U249/Y (INVX1)                           0.0711     0.3932 r
+  chroma_stats/U152/Y (AND2XL)                          0.0925     0.4857 r
+  chroma_stats/U104/CO (ADDFX1)                         0.1501     0.6359 r
+  chroma_stats/U98/CO (ADDFX1)                          0.1258     0.7616 r
+  chroma_stats/U95/CO (ADDFX1)                          0.1258     0.8874 r
+  chroma_stats/U94/CO (ADDFX1)                          0.1258     1.0131 r
+  chroma_stats/U39/CO (ADDFXL)                          0.1193     1.1324 r
+  chroma_stats/U38/CO (ADDFXL)                          0.1198     1.2522 r
+  chroma_stats/U93/CO (ADDFX1)                          0.1263     1.3785 r
+  chroma_stats/U40/CO (ADDFXL)                          0.1193     1.4977 r
+  chroma_stats/U41/CO (ADDFXL)                          0.1198     1.6175 r
+  chroma_stats/U43/CO (ADDFXL)                          0.1198     1.7373 r
+  chroma_stats/U42/CO (ADDFXL)                          0.1198     1.8570 r
+  chroma_stats/U44/CO (ADDFXL)                          0.1198     1.9768 r
+  chroma_stats/U45/CO (ADDFXL)                          0.1198     2.0966 r
+  chroma_stats/U46/CO (ADDFXL)                          0.1198     2.2164 r
+  chroma_stats/U261/CO (ADDFXL)                         0.1198     2.3361 r
+  chroma_stats/U263/CO (ADDFXL)                         0.1198     2.4559 r
+  chroma_stats/U265/CO (ADDFXL)                         0.1198     2.5757 r
+  chroma_stats/U267/CO (ADDFXL)                         0.1198     2.6955 r
+  chroma_stats/U269/CO (ADDFXL)                         0.1198     2.8152 r
+  chroma_stats/U272/CO (ADDFXL)                         0.1198     2.9350 r
+  chroma_stats/U275/CO (ADDFXL)                         0.1198     3.0548 r
+  chroma_stats/U277/CO (ADDFXL)                         0.1198     3.1746 r
+  chroma_stats/U279/CO (ADDFXL)                         0.1198     3.2943 r
+  chroma_stats/U281/CO (ADDFXL)                         0.1198     3.4141 r
+  chroma_stats/U282/CO (ADDFXL)                         0.1198     3.5339 r
+  chroma_stats/U286/CO (ADDFXL)                         0.1198     3.6536 r
+  chroma_stats/U288/CO (ADDFXL)                         0.1198     3.7734 r
+  chroma_stats/U289/CO (ADDFXL)                         0.1198     3.8932 r
+  chroma_stats/U292/CO (ADDFXL)                         0.1198     4.0130 r
+  chroma_stats/U294/CO (ADDFXL)                         0.1198     4.1327 r
+  chroma_stats/U297/CO (ADDFXL)                         0.1198     4.2525 r
+  chroma_stats/U300/CO (ADDFXL)                         0.1198     4.3723 r
+  chroma_stats/U304/CO (ADDFXL)                         0.1198     4.4921 r
+  chroma_stats/U303/CO (ADDFXL)                         0.1198     4.6118 r
+  chroma_stats/U302/CO (ADDFXL)                         0.1209     4.7327 r
+  chroma_stats/U301/CO (ADDHXL)                         0.0936     4.8264 r
+  chroma_stats/U2713/CO (ADDHX1)                        0.0999     4.9262 r
+  chroma_stats/U2715/CO (ADDHX1)                        0.0980     5.0242 r
+  chroma_stats/U2717/CO (ADDHX1)                        0.0980     5.1222 r
+  chroma_stats/U2719/CO (ADDHX1)                        0.0980     5.2202 r
+  chroma_stats/U2721/CO (ADDHX1)                        0.0980     5.3182 r
+  chroma_stats/U2723/CO (ADDHX1)                        0.0980     5.4162 r
+  chroma_stats/U2725/CO (ADDHX1)                        0.0980     5.5142 r
+  chroma_stats/U2727/CO (ADDHX1)                        0.0980     5.6122 r
+  chroma_stats/U2729/CO (ADDHX1)                        0.0980     5.7102 r
+  chroma_stats/U2731/CO (ADDHX1)                        0.0980     5.8082 r
+  chroma_stats/U2733/CO (ADDHX1)                        0.0980     5.9062 r
+  chroma_stats/U2735/CO (ADDHX1)                        0.0980     6.0042 r
+  chroma_stats/U2737/CO (ADDHX1)                        0.0980     6.1022 r
+  chroma_stats/U2739/CO (ADDHX1)                        0.0980     6.2002 r
+  chroma_stats/U245/CO (ADDHXL)                         0.0852     6.2854 r
+  chroma_stats/U242/Y (XOR2XL)                          0.0838     6.3692 r
+  chroma_stats/U37/Y (NOR2BXL)                          0.0559     6.4251 r
+  chroma_stats/sum3rd_sqr_Cb_reg_52_/D (DFFQXL)         0.0110     6.4361 r
+  data arrival time                                                6.4361
+
+  clock clk (rise edge)                                 6.5000     6.5000
+  clock network delay (ideal)                           0.0000     6.5000
+  chroma_stats/sum3rd_sqr_Cb_reg_52_/CK (DFFQXL)        0.0000     6.5000 r
+  library setup time                                   -0.0637     6.4363
+  data required time                                               6.4363
+  --------------------------------------------------------------------------
+  data required time                                               6.4363
+  data arrival time                                               -6.4361
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0002
+
+
+1

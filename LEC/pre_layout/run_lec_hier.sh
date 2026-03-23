@@ -1,0 +1,1 @@
+lec -xl -nogui -dofile lec_hier_all.do 
